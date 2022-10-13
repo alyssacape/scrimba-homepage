@@ -8,53 +8,100 @@ DARK BLUE: #1D3557
 
 */
 
-body {
-    
-    text-align: center;
-    margin: 8px;
-    background-color: white;
-    font-family: 'Roboto', sans-serif;
-
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-img {
-    width: 100px;
+body {
+    background-color: #151515;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 768px;
+    margin: 0px auto;
+    padding: 24px;
 }
 
 .banner {
-    padding: 100px;
+    height: 343px;
     border-radius: 20px 20px 0 0;
     background-image: url("images/bacolod-ngc.jpg");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
-    height:40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-
-
 }
 
-.banner-h1 {
-    color: #eef4ed;
-    background-color: rgba(64, 78, 124, 1);
-    border-radius: 10px 10px;
-    padding: 10px 40px;
-    width: max-content;
-    margin-bottom: 20px;
-
-}
-
-.banner-h2 {
-    color: #eef4ed;
-    background-color: rgba(37, 31, 71, 1);
+.banner__title {
+    color: #FFFFFF;
+    font-size: 32px;
+    line-height: 36.8px;
+    font-weight: 700;
+    background-color: #1D3557;
     border-radius: 10px;
-    padding: 10px 40px;
+    padding: 3px 12px 5px;
     width: max-content;
-    margin-top: 0px;
+    margin-bottom: 11px;
+}
 
+.banner__subtitle {
+    color: #FFFFFF;
+    background-color: #457B9D;
+    border-radius: 10px;
+    padding: 5px 29px 8px;
+    width: max-content;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 22px;  
+}
+
+.activities {
+    color: #1D3557;
+    background-color: #F1FAEE;
+    padding: 38px 34px;
+}
+
+.activities__header {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 54px;
+}
+
+.activities__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.activities__column {
+    max-width: 198px;
+    text-align: center;
+}
+
+.activities__image {
+    border-radius: 50%;
+    height: 104px;
+    width: 104px;
+    margin-bottom: 22px;
+}
+
+.activities__title {
+    margin-bottom: 17px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+
+}
+.activities__description {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
 }

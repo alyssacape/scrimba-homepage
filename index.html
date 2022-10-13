@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <title>Bacolod City</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        
-        <!-- HERO SECTION -->
-        <div class="banner">
-            <h1 class="banner-h1">Visit Bacolod City</h1>
-            <h2 class="banner-h2">Welcome to the city of smiles!</h2>
-        </div>
-        
-        <!-- ACTIVITIES SECTION -->
-        <div class="activities">
-            <h3>Top three activities to do at Bacolod City</h3>
-            <img src="images/park.jpg">
-            <img src="images/theatre.jpg">
-            <img src="images/sports.jpg">
-        </div>
+        <main class="container">
+           <!-- HERO SECTION -->
+            <div class="banner">
+                <h1 class="banner__title">Visit Bacolod City</h1>
+                <h2 class="banner__subtitle">Welcome to the city of smiles!</h2>
+            </div>
+            
+            <!-- ACTIVITIES SECTION -->
+            <div class="activities">
+                <h2 class="activities__header">Top three activities to do at Bacolod City</h2>
+                <div class="activities__container">
+                    <div class="activities__column activities__column--food">
+                        <img class="activities__image" src="images/bacolod-inasal.jpg">
+                        <h3 class="activities__title">Bacolod's Chicken Inasal</h3>
+                        <p class="activities__description">is popular for its distinct marination.</p>
+                    </div>
 
-        <!-- GUIDE SECTION -->
-        <div class="guide">
-            <h3>Your guide</h3>
-            <p>"I have lived at Torshov for over 30 years, so I can show you all of its best parts and hidden secrets."</p>
-            <h4>Per Harald Borgen</h4>
-            <img src="images/per.jpg">
-        </div>
+                    <div class="activities__column activities__column--event">
+                        <img class="activities__image" src="images/bacolod-festival.jpg">
+                        <h3 class="activities__title">MassKara Festival</h3>
+                        <p class="activities__description">is an annual festival held on the fourth Sunday of October.</p>
+                    </div>
+
+                    <div class="activities__column activities__column--place">
+                        <img class="activities__image" src="images/bacolod-ruins.jpg">
+                        <h3 class="activities__title">The Ruins</h3>
+                        <p class="activities__description">formally known as the Taj Mahal of the Philippines.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GUIDE SECTION -->
+            <div class="guide">
+                <h3>Your guide</h3>
+                <p>"I have lived at Torshov for over 30 years, so I can show you all of its best parts and hidden secrets."</p>
+                <h4>Per Harald Borgen</h4>
+                <img width="180" src="images/per.jpg">
+            </div>
+        </main>
     </body>
 </html>
