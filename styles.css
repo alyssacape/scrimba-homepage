@@ -21,9 +21,16 @@ body {
 
 .container {
     max-width: 768px;
+    width: 100%;
     margin: 0px auto;
     padding: 24px;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+      padding: 0;
+    }
+  }
 
 .banner {
     height: 343px;
@@ -37,6 +44,12 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+    .banner {
+      border-radius: 0;
+    }
+  }
 
 .banner__title {
     color: #FFFFFF;
@@ -80,9 +93,22 @@ body {
     flex-direction: row;
     justify-content: space-around;
 }
+
+@media screen and (max-width: 768px) {
+    .activities__container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 .activities__column {
     max-width: 198px;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .activities__column + .activities__column {
+        margin-top: 24px;
+    }
 }
 
 .activities__image {
@@ -108,15 +134,25 @@ body {
 
 
 .guide {
-    width: 720px;
+    max-width: 768px;
+    width: 100%;
     height: 394px;
     background: #FFFFFF;
-    padding: 50px 160px;
+    padding: 50px 20.83%;
     border-radius: 0 0 20px 20px;
 }
 
+@media screen and (max-width: 768px) {
+    .guide {
+        height: auto;
+        border-radius: 0;
+    }
+}
+
 .guide__card {
-    width: 400px;
+    max-width: 400px;
+    min-width: 200px;
+    width: 100%;
     height: 294px;
     background: #A8DADC;
     box-shadow: 0px 6px 0px #1D3557;
@@ -125,6 +161,13 @@ body {
     display: flex;
     flex-direction: row-reverse;
 }
+
+@media screen and (max-width: 768px) {
+    .guide__card {
+      flex-direction: column-reverse;
+      height: auto;
+    }
+  }
 
 .guide__text {
     margin-left: 5px;
@@ -158,3 +201,9 @@ body {
 .guide__image {
     border-radius: 10px;
 }
+
+@media screen and (max-width: 768px) {
+    .guide__image {
+      margin: 0 auto 14px;
+    }
+  }
